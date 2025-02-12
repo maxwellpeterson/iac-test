@@ -1,0 +1,19 @@
+{
+  "name": "iac-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sst": "3.8.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20250204.0",
+    "esbuild": "^0.25.0"
+  }
+}
