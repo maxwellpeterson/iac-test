@@ -13,6 +13,7 @@ import { Resource } from "sst";
 
 export default {
   async fetch(req: Request) {
+    console.log("Hi SST!");
     if (req.method == "GET") {
       // Problem! TypeScript complains about my resource name until I run `npx
       // sst dev`.
