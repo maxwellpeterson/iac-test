@@ -1,0 +1,12 @@
+{
+  "name": "iac-test-terraform",
+  "scripts": {
+    "build": "esbuild index.ts --outdir=build",
+    "plan" : "npm run build && terraform plan -var cloudflare_api_token=$CLOUDFLARE_API_TOKEN",
+    "deploy" : "npm run build && terraform deploy -var cloudflare_api_token=$CLOUDFLARE_API_TOKEN"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20250204.0",
+    "esbuild": "^0.25.0"
+  }
+}

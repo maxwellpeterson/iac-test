@@ -3,4 +3,5 @@ build/
 .env
 
 .terraform/
+.wrangler/
 .sst/

@@ -13,7 +13,7 @@ export default $config({
     const bucket = new sst.cloudflare.Bucket("MaxBucketSST");
     
     const worker = new sst.cloudflare.Worker("MaxWorkerSST", {
-      handler: "./index.sst.ts",
+      handler: "./index.ts",
       link: [bucket],
       url: true,
     });

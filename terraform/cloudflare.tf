@@ -33,7 +33,7 @@ resource "cloudflare_workers_script" "max_terraform_test_worker" {
   script_name = "max-terraform-test"
   // Problem! Content field missing from:
   // https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/workers_script#example-usage
-  content = file("build/index.terraform.js")
+  content = file("build/index.js")
   # Error! Don't want this...
   # metadata = {
     bindings = [{

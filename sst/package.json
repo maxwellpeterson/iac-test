@@ -1,0 +1,13 @@
+{
+  "name": "iac-test-sst",
+  "scripts": {
+    "dev": "sst dev",
+    "deploy" : "sst deploy --stage production"
+  },
+  "dependencies": {
+    "sst": "3.8.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20250204.0"
+  }
+}

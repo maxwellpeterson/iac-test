@@ -1,0 +1,12 @@
+{
+  "name": "iac-test-wrangler",
+  "scripts": {
+    "dev": "wrangler dev",
+    "types": "wrangler types",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20250204.0",
+    "wrangler": "^3.109.0"
+  }
+}
