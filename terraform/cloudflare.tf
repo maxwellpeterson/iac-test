@@ -53,7 +53,7 @@ resource "cloudflare_workers_script" "max_terraform_test_worker" {
     //       ~ id                  = "max-terraform-test" -> (known after apply) # forces replacement
     // This is wrong:
     // https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/workers_script#id-4
-    compatibility_date = "2025-01-01"
+    compatibility_date = "2024-01-01"
     # compatibility_flags = ["nodejs_compat"]
     // Does this matter??
     main_module = "worker.js"
