@@ -43,6 +43,10 @@ resource "cloudflare_workers_script" "max_terraform_test_worker" {
       type = "r2_bucket"
       bucket_name = cloudflare_r2_bucket.max_terraform_test_bucket.name
 
+    }, {
+      name = "DO"
+      type = "durable_object_namespace"
+      class_name = "TestObject"
     }]
     # Don't want to use service worker syntax...
     # body_part = "worker.js"
@@ -60,6 +64,9 @@ resource "cloudflare_workers_script" "max_terraform_test_worker" {
     # Error! Don't want this...
     # tags = ["string"]
   # }
+  migrations = {
+    new_classes = ["TestObject"]
+  }
 }
 
 resource "cloudflare_workers_script_subdomain" "max_terraform_test_subdomain" {
